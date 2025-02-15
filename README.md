@@ -32,6 +32,3 @@
 </p>
 
 ---
-<p align="center" >
-  <img alt="Profile Visit Card", src="https://visitcount.itsvg.in/api?id=Nionim&label=Profile%20Views&color=11&icon=5&pretty=false)](https://visitcount.itsvg.in">
-</p>
