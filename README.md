@@ -10,9 +10,7 @@
   MC <b>&</b> Discord <b>&</b> Bots - developer
   <br>
   <br>
-  <i>GMA FOREVER!</i>
-  <br>
-  <i>AVE VIOLETTE!</i>
+  <i>AVE MARIA!</i>
 </p>
 
 <H1 align="center"> 
