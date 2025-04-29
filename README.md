@@ -34,10 +34,9 @@
 
 ---
 <p align="center" >
- <img alt="Most Used Langs", src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nionim&theme=gotham&border_radius=6&include_all_commits=true&count_private=true&layout=compact">
-</p>
-<p align="center" >
  <img alt="Streak Stats", src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6">
+  <br>
+ <img alt="Most Used Langs", src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nionim&theme=gotham&border_radius=6&include_all_commits=true&count_private=true&layout=compact">
 </p>
 
 ---
