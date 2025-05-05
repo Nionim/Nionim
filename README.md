@@ -5,8 +5,6 @@
 </H1>
 
 <p align="center">
-  Developer from Russia.
-  <br>
   MC <b>&</b> Discord <b>&</b> Bots - developer
   <br>
   <br>
