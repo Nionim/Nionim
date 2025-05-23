@@ -8,12 +8,6 @@
   MC <b>&</b> Discord <b>&</b> Bots - developer
   <br><br>
   I create what shouldn't, support those I shouldn't.
-  <br>
-  Создаю то, что не надо, поддерживаю тех, кого не стоит.
-  <br><br>
-  Основная разработка под Minecraft или другие игрушки. 
-  <br>
-  Так же иногда делаю что-то утилитарное, что может вам пригодиться в случае... <i>В случае.</i>
   <br><br>
   <i>AVE MARIA!</i>
 </p>
