@@ -1,12 +1,38 @@
 #!/bin/bash
 
 # Initialize error log
-ERROR_LOG="/tmp/arch_install_errors.log"
+ERROR_LOG="/tmp/arch_installer_errors.log"
 > "$ERROR_LOG"
 
-# Error handling function
-log_error() {
-  echo "Error: $1" >> "$ERROR_LOG"
+read -p "HOSTNAME: " HOSTNAME
+read -p "USERNAME: " USERNAME
+read -p "ROOTPASS: " ROOTPASS
+read -p "USERPASS: " USERPASS
+
+# Function to handle disk partitioning with signature removal
+partition_disk() {
+    local disk=$1
+    {
+        echo g      # Create new GPT table
+        echo n      # New partition
+        echo 1      # Partition number
+        echo        # Default first sector
+        echo +500M  # Partition size
+        echo t      # Change partition type
+        echo 1      # EFI System
+        echo n      # New partition
+        echo 2      # Partition number
+        echo        # Default first sector
+        echo +4G    # Partition size
+        echo t      # Change partition type
+        echo 2      # Partition number
+        echo 19    # Linux swap
+        echo n      # New partition
+        echo 3      # Partition number
+        echo        # Default first sector
+        echo        # Use remaining space
+        echo w      # Write changes
+    } | grep -v -e "signature" -e "СИГНАТУРА" | fdisk $disk 2>> "$ERROR_LOG"
 }
 
 # Get installation disk name
@@ -15,39 +41,20 @@ lsblk
 read -p "Enter disk name for installation (e.g., sda): " DISK
 DISK="/dev/${DISK}"
 
-# Disk partitioning
-echo "Partitioning disk $DISK..."
+# Disk partitioning with automatic signature removal
+echo "Partitioning disk $DISK (automatically removing signatures)..."
 fdisk -l
 
-(
-echo g
-echo n
-echo 1
-echo
-echo +500M
-echo t
-echo 1
-echo n
-echo 2
-echo
-echo +4G
-echo t
-echo 2
-echo 19
-echo n
-echo 3
-echo
-echo
-echo w
-) | fdisk $DISK 2>> "$ERROR_LOG" || log_error "Disk partitioning failed"
+# Partition the disk with auto 'y' for signature removal
+yes | partition_disk $DISK || log_error "Disk partitioning failed"
 
 fdisk -l
 
-# Formatting partitions
+# Formatting partitions with forced overwrite
 echo "Formatting partitions..."
-mkfs.fat -F32 ${DISK}1 2>> "$ERROR_LOG" || log_error "EFI partition formatting failed"
-mkswap ${DISK}2 2>> "$ERROR_LOG" || log_error "Swap creation failed"
-mkfs.ext4 ${DISK}3 2>> "$ERROR_LOG" || log_error "Root partition formatting failed"
+mkfs.fat -F32 ${DISK}1 <<< $'y\n' 2>> "$ERROR_LOG" || log_error "EFI partition formatting failed"
+mkswap -f ${DISK}2 <<< $'y\n' 2>> "$ERROR_LOG" || log_error "Swap creation failed"
+mkfs.ext4 -F ${DISK}3 <<< $'y\n' 2>> "$ERROR_LOG" || log_error "Root partition formatting failed"
 
 # Mounting partitions
 echo "Mounting partitions..."
@@ -81,25 +88,21 @@ echo "ru_UA.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
 # Network configuration
-read -p "Enter hostname: " HOSTNAME
-echo "\$HOSTNAME" > /etc/hostname
+echo "$HOSTNAME" > /etc/hostname
 
 cat > /etc/hosts <<HOSTS_EOF
 127.0.0.1  localhost
 ::1        localhost
-127.0.1.1  \$HOSTNAME.localdomain  \$HOSTNAME
+127.0.1.1  $HOSTNAME.localdomain  $HOSTNAME
 HOSTS_EOF
 
 # Set root password
-echo "Setting root password:"
-passwd || exit 1
+echo "root:$ROOTPASS" | chpasswd
 
 # Create user
-read -p "Enter username: " USER
-useradd -m \$USER || exit 1
-echo "Setting password for user \$USER:"
-passwd \$USER || exit 1
-usermod -aG wheel,audio,video,storage,optical \$USER
+useradd -m $USERNAME || exit 1
+echo "$USERNAME:$USERPASS" | chpasswd
+usermod -aG wheel,audio,video,storage,optical $USERNAME
 
 # Configure sudo
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
