@@ -1,118 +1,132 @@
 #!/bin/bash
 
-# Функция для вывода ошибок
-error_exit() {
-  echo "Ошибка: $1"
-  exit 1
+# Initialize error log
+ERROR_LOG="/tmp/arch_install_errors.log"
+> "$ERROR_LOG"
+
+# Error handling function
+log_error() {
+  echo "Error: $1" >> "$ERROR_LOG"
 }
 
-# Получаем имя диска для установки
-echo "Доступные диски:"
+# Get installation disk name
+echo "Available disks:"
 lsblk
-read -p "Введите имя диска для установки (например, sda): " DISK
+read -p "Enter disk name for installation (e.g., sda): " DISK
 DISK="/dev/${DISK}"
 
-# Разметка диска
-echo "Разметка диска $DISK..."
+# Disk partitioning
+echo "Partitioning disk $DISK..."
 fdisk -l
 
 (
-echo g      # Создаем новую GPT таблицу
-echo n      # Новый раздел
-echo 1      # Номер раздела
-echo        # Первый сектор по умолчанию
-echo +500M  # Размер раздела
-echo t      # Изменение типа раздела
-echo 1      # EFI System
-echo n      # Новый раздел
-echo 2      # Номер раздела
-echo        # Первый сектор по умолчанию
-echo +4G    # Размер раздела
-echo t      # Изменение типа раздела
-echo 2      # Номер раздела
-echo 19     # Linux swap
-echo n      # Новый раздел
-echo 3      # Номер раздела
-echo        # Первый сектор по умолчанию
-echo        # Весь оставшийся диск
-echo w      # Записать изменения
-) | fdisk $DISK || error_exit "Ошибка при разметке диска"
+echo g
+echo n
+echo 1
+echo
+echo +500M
+echo t
+echo 1
+echo n
+echo 2
+echo
+echo +4G
+echo t
+echo 2
+echo 19
+echo n
+echo 3
+echo
+echo
+echo w
+) | fdisk $DISK 2>> "$ERROR_LOG" || log_error "Disk partitioning failed"
 
 fdisk -l
 
-# Форматирование разделов
-echo "Форматирование разделов..."
-mkfs.fat -F32 ${DISK}1 || error_exit "Ошибка при форматировании EFI раздела"
-mkswap ${DISK}2 || error_exit "Ошибка при создании swap"
-mkfs.ext4 ${DISK}3 || error_exit "Ошибка при форматировании корневого раздела"
+# Formatting partitions
+echo "Formatting partitions..."
+mkfs.fat -F32 ${DISK}1 2>> "$ERROR_LOG" || log_error "EFI partition formatting failed"
+mkswap ${DISK}2 2>> "$ERROR_LOG" || log_error "Swap creation failed"
+mkfs.ext4 ${DISK}3 2>> "$ERROR_LOG" || log_error "Root partition formatting failed"
 
-# Монтирование разделов
-echo "Монтирование разделов..."
-swapon ${DISK}2
-mount ${DISK}3 /mnt || error_exit "Ошибка при монтировании корневого раздела"
+# Mounting partitions
+echo "Mounting partitions..."
+swapon ${DISK}2 2>> "$ERROR_LOG" || log_error "Swap activation failed"
+mount ${DISK}3 /mnt 2>> "$ERROR_LOG" || log_error "Root partition mount failed"
 mkdir -p /mnt/boot/efi
-mount ${DISK}1 /mnt/boot/efi || error_exit "Ошибка при монтировании EFI раздела"
+mount ${DISK}1 /mnt/boot/efi 2>> "$ERROR_LOG" || log_error "EFI partition mount failed"
 
-# Установка базовой системы
-echo "Установка базовой системы..."
-pacstrap /mnt base linux linux-firmware nano sudo networkmanager grub efibootmgr || error_exit "Ошибка при установке пакетов"
+# Base system installation
+echo "Installing base system..."
+pacstrap /mnt base linux linux-firmware nano sudo networkmanager grub efibootmgr 2>> "$ERROR_LOG" || log_error "Package installation failed"
 
-# Генерация fstab
-echo "Генерация fstab..."
-genfstab -U /mnt >> /mnt/etc/fstab || error_exit "Ошибка при генерации fstab"
+# Generate fstab
+echo "Generating fstab..."
+genfstab -U /mnt >> /mnt/etc/fstab 2>> "$ERROR_LOG" || log_error "fstab generation failed"
 cat /mnt/etc/fstab
 
-# Настройка системы в chroot
-echo "Настройка системы в chroot..."
-arch-chroot /mnt /bin/bash <<EOF || error_exit "Ошибка в chroot окружении"
+# System configuration in chroot
+echo "Configuring system in chroot..."
+arch-chroot /mnt /bin/bash <<EOF 2>> "$ERROR_LOG" || log_error "Chroot environment error"
 
-# Установка времени и локали
+# Timezone and locale setup
 timedatectl set-timezone Europe/Moscow
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
 
-# Настройка локалей
+# Locale configuration
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
 echo "ru_UA.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
-# Настройка сети
-read -p "Введите имя хоста: " HOSTNAME
-echo "$HOSTNAME" > /etc/hostname
+# Network configuration
+read -p "Enter hostname: " HOSTNAME
+echo "\$HOSTNAME" > /etc/hostname
 
 cat > /etc/hosts <<HOSTS_EOF
 127.0.0.1  localhost
 ::1        localhost
-127.0.1.1  $HOSTNAME.localdomain  $HOSTNAME
+127.0.1.1  \$HOSTNAME.localdomain  \$HOSTNAME
 HOSTS_EOF
 
-# Установка пароля root
-echo "Установка пароля для root:"
+# Set root password
+echo "Setting root password:"
 passwd || exit 1
 
-# Создание пользователя
-read -p "Введите имя пользователя: " USER
+# Create user
+read -p "Enter username: " USER
 useradd -m \$USER || exit 1
-echo "Установка пароля для пользователя \$USER:"
+echo "Setting password for user \$USER:"
 passwd \$USER || exit 1
 usermod -aG wheel,audio,video,storage,optical \$USER
 
-# Настройка sudo
+# Configure sudo
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 echo "%sudo ALL=(ALL) ALL" >> /etc/sudoers
 
-# Включение NetworkManager
+# Enable NetworkManager
 systemctl enable NetworkManager
 
-# Установка загрузчика
+# Install bootloader
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck $DISK || exit 1
 grub-mkconfig -o /boot/grub/grub.cfg || exit 1
 
 exit
 EOF
 
-# Завершение установки
-echo "Завершение установки..."
-umount -R /mnt
-echo "Установка завершена! Выполните reboot для перезагрузки системы."
+# Finalizing installation
+echo "Completing installation..."
+umount -R /mnt 2>> "$ERROR_LOG" || log_error "Unmounting failed"
+
+# Display collected errors
+echo -e "\n\n=== Installation Summary ==="
+if [ -s "$ERROR_LOG" ]; then
+  echo -e "\nThe following errors occurred during installation:"
+  cat "$ERROR_LOG"
+  echo -e "\nWarning: Some errors were encountered during installation!"
+else
+  echo -e "\nNo errors detected during installation."
+fi
+
+echo -e "\nInstallation complete! Execute 'reboot' to restart the system."
