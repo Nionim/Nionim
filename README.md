@@ -7,8 +7,6 @@
 <p align="center">
   Fck my life
   <br><br>
-  I create what shouldn't, support those I shouldn't.
-  <br><br>
   <i>AVE MARIA!</i>
 </p>
 
