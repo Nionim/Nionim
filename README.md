@@ -5,7 +5,7 @@
 </H1>
 
 <p align="center">
-  MC <b>&</b> Discord <b>&</b> Bots - developer
+  Fck my life
   <br><br>
   I create what shouldn't, support those I shouldn't.
   <br><br>
