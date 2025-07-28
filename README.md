@@ -1,5 +1,5 @@
 <H1 align="center"> 
-  Delta~Cion
+  $ DeltaCion
   <br>
   (@nionim)
 </H1>
@@ -48,6 +48,15 @@
     <img alt="My Boosty" src="https://img.shields.io/badge/My_Boosty-white?style=for-the-badge&logo=boosty&logoColor=white&logoSize=64&label=%20&labelColor=ed7315&color=242323&link=https%3A%2F%2Fboosty.to%2Fnionim"></a>
   <a href="https://t.me/projectviolette" target="_blank">
     <img alt="My Telegram" src="https://img.shields.io/badge/My_Telegram-white?style=for-the-badge&logo=telegram&logoColor=white&logoSize=64&label=%20&labelColor=00aeff&color=242323&link=https%3A%2F%2Ft.me%2Fprojectviolette"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Project-Violette" target="_blank">
+	<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.violette.png" alt="Project~Violette"></a>
+  <a href="https://github.com/TheVoid-KTS2k" target="_blank">
+	<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.void.png" alt="Project~Void"></a>
+	<a href="https://github.com/Delta-Factory" target="_blank">
+  <img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
 </p>
 
 ---
