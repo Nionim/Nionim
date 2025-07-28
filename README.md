@@ -63,6 +63,6 @@
 
 <p align="center">
     <b>
-        <a href="./utils/utils.md" style="text-decoration: underline"> See my utils!</a>
+        <a href="https://github.com/Nionim/Citory_Utils" style="text-decoration: underline"> See my utils!</a>
     </b>
 </p>
