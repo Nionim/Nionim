@@ -33,17 +33,18 @@
 </H3>
 
 <p align="center">
-	<img alt="OpenSSH", src="https://img.shields.io/badge/openssh-white?style=for-the-badge&logo=gnometerminal&logoColor=white&logoSize=64&labelColor=%23141414&color=242323">
-	<img alt="Docker", src="https://img.shields.io/badge/Docker-white?style=for-the-badge&logo=docker&logoColor=white&logoSize=64&label=%20&labelColor=%23006f82&color=242323"> 
 	<img alt="Trello", src="https://img.shields.io/badge/Trello-white?style=for-the-badge&logo=Trello&logoColor=white&logoSize=64&label=%20&labelColor=%23327a87&color=242323"> 
 	<img alt="Google Cloud", src="https://img.shields.io/badge/Google_Cloud-white?style=for-the-badge&logo=google-cloud&logoColor=white&logoSize=64&label=%20&labelColor=%2396a4ff&color=242323">
-	<img alt="Apache", src="https://img.shields.io/badge/Apache-white?style=for-the-badge&logo=apache&logoColor=white&logoSize=64&label=%20&labelColor=%23960000&color=242323"> 
-	<img alt="Nginx", src="https://img.shields.io/badge/Nginx-white?style=for-the-badge&logo=nginx&logoColor=white&logoSize=64&label=%20&labelColor=%23009924&color=242323"> 
-	<img alt="SQLite", src="https://img.shields.io/badge/SQLite-white?style=for-the-badge&logo=sqlite&logoColor=white&logoSize=64&label=%20&labelColor=%23004599&color=242323">
 	<br>
 	<img alt="Debian 11-12", src="https://img.shields.io/badge/debian_11%2F12-white?style=for-the-badge&logo=debian&logoColor=white&logoSize=64&labelColor=%23141414&color=242323">
 	<img alt="ArchLinux", src="https://img.shields.io/badge/archlinux-white?style=for-the-badge&logo=archlinux&logoColor=white&logoSize=64&labelColor=%23005a7d&color=242323">
 	<img alt="Windows 10", src="https://img.shields.io/badge/windows_10-white?style=for-the-badge&labelColor=%23005a7d&color=242323">
+	<br>
+	<img alt="OpenSSH", src="https://img.shields.io/badge/openssh-white?style=for-the-badge&logo=gnometerminal&logoColor=white&logoSize=64&labelColor=%23141414&color=242323">
+	<img alt="Docker", src="https://img.shields.io/badge/Docker-white?style=for-the-badge&logo=docker&logoColor=white&logoSize=64&label=%20&labelColor=%23006f82&color=242323"> 
+	<img alt="Apache", src="https://img.shields.io/badge/Apache-white?style=for-the-badge&logo=apache&logoColor=white&logoSize=64&label=%20&labelColor=%23960000&color=242323"> 
+	<img alt="Nginx", src="https://img.shields.io/badge/Nginx-white?style=for-the-badge&logo=nginx&logoColor=white&logoSize=64&label=%20&labelColor=%23009924&color=242323"> 
+	<img alt="SQLite", src="https://img.shields.io/badge/SQLite-white?style=for-the-badge&logo=sqlite&logoColor=white&logoSize=64&label=%20&labelColor=%23004599&color=242323">
 </p>
 
 ---
