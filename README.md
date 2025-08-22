@@ -21,6 +21,8 @@
 <p align="center">
 	<img alt="Java (8-23)", src="https://img.shields.io/badge/Java-white?style=for-the-badge&logo=openjdk&logoColor=white&logoSize=64&label=%20&labelColor=ff9100&color=242323"> 
 	<img alt="Python", src="https://img.shields.io/badge/Python-white?style=for-the-badge&logo=python&logoColor=white&logoSize=64&label=%20&labelColor=4c55a8&color=242323"> 
+	<img alt="Rust", src="https://img.shields.io/badge/rust-white?style=for-the-badge&logo=rust&logoColor=white&logoSize=64&labelColor=%23000000&color=242323">
+	<br>
 	<img alt="CSS3", src="https://img.shields.io/badge/CSS3-white?style=for-the-badge&logo=css&logoColor=white&logoSize=64&label=%20&labelColor=%230f66d1&color=242323"> 
 	<img alt="MarkDown", src="https://img.shields.io/badge/MarkDown-white?style=for-the-badge&logo=markdown&logoColor=white&logoSize=64&label=%20&labelColor=%23383838&color=242323"> 
 	<img alt="HTML5", src="https://img.shields.io/badge/HTML5-white?style=for-the-badge&logo=html5&logoColor=white&logoSize=64&label=%20&labelColor=%23ff6224&color=242323">
