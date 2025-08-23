@@ -5,9 +5,7 @@
 </H1>
 
 <p align="center">
-  Fck my life
-  <br><br>
-  <i>AVE MARIA!</i>
+  ;
 </p>
 
 <H1 align="center"> 
