@@ -4,8 +4,8 @@
   (@nionim)
 </H1>
 
-<p align="center">
-  ;
+<p align="center" style="font-size=150px">
+  <b><code>;</code></b>
 </p>
 
 <H1 align="center"> 
