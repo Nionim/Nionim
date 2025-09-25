@@ -62,7 +62,7 @@
     <img alt="My Server" src="https://img.shields.io/badge/My_Server-white?style=for-the-badge&logo=discord&logoColor=white&logoSize=64&label=%20&labelColor=5c32a8&color=242323&link=https%3A%2F%2Fdiscord.gg%2FMEBkvJbe4P"></a>
   <a href="https://boosty.to/nionim" target="_blank">
     <img alt="My Boosty" src="https://img.shields.io/badge/My_Boosty-white?style=for-the-badge&logo=boosty&logoColor=white&logoSize=64&label=%20&labelColor=ed7315&color=242323&link=https%3A%2F%2Fboosty.to%2Fnionim"></a>
-  <a href="https://t.me/projectviolette" target="_blank">
+  <a href="https://t.me/LOWcitory" target="_blank">
     <img alt="My Telegram" src="https://img.shields.io/badge/My_Telegram-white?style=for-the-badge&logo=telegram&logoColor=white&logoSize=64&label=%20&labelColor=00aeff&color=242323&link=https%3A%2F%2Ft.me%2Fprojectviolette"></a>
 </p>
 
@@ -78,7 +78,6 @@
 ---
 
 <p align="center">
-    <b>
-        <a href="https://github.com/Nionim/Citory_Utils" style="text-decoration: underline"> See my utils!</a>
-    </b>
+	<a href="https://github.com/Nionim/Citory_Utils" target="_blank">
+    	<img alt="See my utils", src="https://readme-typing-svg.demolab.com?font=Comic+Sans+MS&size=31&pause=125&color=8518F7&center=true&vCenter=true&width=435&lines=%3E+%24+DeltaCion;%3E+Lmao;U+can+see+my+utils"></a>
 </p>
