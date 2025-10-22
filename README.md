@@ -5,7 +5,13 @@
 </H1>
 
 <p align="center" style="font-size=150px">
-  <b><code>;</code></b>
+  	<b>
+		<code>;</code>
+		<br><br>
+		Специализируюсь на серверах, 
+		<br>
+		сисадминстве и кибербезе (LMAO)
+	</b>
 </p>
 
 <H1 align="center"> 
