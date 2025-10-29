@@ -73,12 +73,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Project-Violette" target="_blank">
-	<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.violette.png" alt="Project~Violette"></a>
-  <a href="https://github.com/TheVoid-KTS2k" target="_blank">
-	<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.void.png" alt="Project~Void"></a>
+  	<a href="https://github.com/Project-Violette" target="_blank">
+		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.violette.png" alt="Project~Violette"></a>
+  	<a href="https://github.com/TheVoid-KTS2k" target="_blank">
+		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.void.png" alt="Project~Void"></a>
 	<a href="https://github.com/Delta-Factory" target="_blank">
-  <img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
+  		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
+	<a href="https://github.com/Re-Minecraft" target="_blank">
+  		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/re-Mine.jpg" alt="A fresh look at Minecraft 1.5.2"></a>
 </p>
 
 ---
