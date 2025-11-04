@@ -7,10 +7,6 @@
 <p align="center" style="font-size=150px">
   	<b>
 		<code>;</code>
-		<br><br>
-		Специализируюсь на серверах, 
-		<br>
-		сисадминстве и кибербезе (LMAO)
 	</b>
 </p>
 
