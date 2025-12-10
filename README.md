@@ -76,7 +76,7 @@
 		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.void.png" alt="Citory.net"></a>
 	<a href="https://github.com/Delta-Factory" target="_blank">
   		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
-	<a href="https://github.com/Re-Minecraft" target="_blank">
+	<a href="https://github.com/MCRebooted" target="_blank">
   		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/re-Mine.png" alt="A fresh look at Minecraft 1.5.2"></a>
 </p>
 
