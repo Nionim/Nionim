@@ -83,6 +83,6 @@
 ---
 
 <p align="center">
-	<a href="https://github.com/Nionim/Citory_Utils" target="_blank">
+	<a href="https://github.com/Nionim/Nionim.github.io" target="_blank">
     	<img alt="See my utils", src="https://readme-typing-svg.demolab.com?font=Comic+Sans+MS&size=31&pause=125&color=8518F7&center=true&vCenter=true&width=435&lines=%3E+%24+DeltaCion;%3E+Lmao;U+can+see+my+utils"></a>
 </p>
