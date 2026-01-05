@@ -49,10 +49,10 @@
 </p>
 
 ---
-<p align="center" >
- <img src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6">
-  <br>
- <img alt="Most Used Langs", src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nionim&theme=gotham&border_radius=6&include_all_commits=true&count_private=true&layout=compact">
+<p align="center">
+ 	<img width="50%" alt="Discord Status" src="https://lanyard.cnrad.dev/api/890139054228783124?bg=191919&borderRadius=24px&idleMessage=lol&showDisplayName=true&hideActivity=true">
+	<br><br>
+ 	<img src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6">
 </p>
 
 ---
