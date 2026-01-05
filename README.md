@@ -37,7 +37,7 @@
 	<img alt="Trello", src="https://img.shields.io/badge/Trello-white?style=for-the-badge&logo=Trello&logoColor=white&logoSize=64&label=%20&labelColor=%23327a87&color=242323"> 
 	<img alt="Google Cloud", src="https://img.shields.io/badge/Google_Cloud-white?style=for-the-badge&logo=google-cloud&logoColor=white&logoSize=64&label=%20&labelColor=%2396a4ff&color=242323">
 	<br>
-	<img alt="Debian 11-12", src="https://img.shields.io/badge/debian_11%2F12-white?style=for-the-badge&logo=debian&logoColor=white&logoSize=64&labelColor=%23141414&color=242323">
+	<img alt="Debian 11-13", src="https://img.shields.io/badge/debian_11--13-white?style=for-the-badge&logo=debian&logoColor=white&logoSize=64&labelColor=%23141414&color=242323">
 	<img alt="ArchLinux", src="https://img.shields.io/badge/archlinux-white?style=for-the-badge&logo=archlinux&logoColor=white&logoSize=64&labelColor=%23005a7d&color=242323">
 	<img alt="Windows 10", src="https://img.shields.io/badge/windows_10-white?style=for-the-badge&labelColor=%23005a7d&color=242323">
 	<br>
