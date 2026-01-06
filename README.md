@@ -1,4 +1,4 @@
-<a href="https://github.com/Nionim/NionimDocs" target="_blank">LocalDocs</a>
+/dev/<a href="https://github.com/Nionim/NionimDocs" target="_blank">LocalDocs</a>
 <H1 align="center"> 
   $ DeltaCion
   <br>
