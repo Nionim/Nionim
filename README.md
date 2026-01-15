@@ -58,9 +58,6 @@
 ---
 
 <p align="center">
-  Що?
-</p>
-<p align="center">
   <a href="https://discord.gg/MEBkvJbe4P" target="_blank">
     <img alt="My Server" src="https://img.shields.io/badge/My_Server-white?style=for-the-badge&logo=discord&logoColor=white&logoSize=64&label=%20&labelColor=5c32a8&color=242323&link=https%3A%2F%2Fdiscord.gg%2FMEBkvJbe4P"></a>
   <a href="https://boosty.to/nionim" target="_blank">
