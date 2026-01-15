@@ -1,9 +1,6 @@
 /dev/<a href="https://github.com/Nionim/NionimDocs" target="_blank">LocalDocs</a>
-<H1 align="center"> 
-  $ DeltaCion
-  <br>
-  (@nionim)
-</H1>
+
+<H1 align="center">-==[ $ DeltaCion ]==-</H1>
 
 <p align="center" style="font-size=150px">
   	<b>
@@ -11,13 +8,9 @@
 	</b>
 </p>
 
-<H1 align="center"> 
-  Tech~Stack 
-</H1>
+<H2 align="center">-==[ Tech Stack ]==-</H2>
 
-<H3 align="center">
-	Programming (?) languages
-</H3>
+<H3 align="center">Languages:</H3>
 
 <p align="center">
 	<img alt="Java (8-23)", src="https://img.shields.io/badge/Java-white?style=for-the-badge&logo=openjdk&logoColor=white&logoSize=64&label=%20&labelColor=ff9100&color=242323"> 
@@ -29,9 +22,7 @@
 	<img alt="HTML5", src="https://img.shields.io/badge/HTML5-white?style=for-the-badge&logo=html5&logoColor=white&logoSize=64&label=%20&labelColor=%23ff6224&color=242323">
 </p>
 
-<H3 align="center">
-	Other
-</H3>
+<H3 align="center">Tools:</H3>
 
 <p align="center">
 	<img alt="Trello", src="https://img.shields.io/badge/Trello-white?style=for-the-badge&logo=Trello&logoColor=white&logoSize=64&label=%20&labelColor=%23327a87&color=242323"> 
@@ -48,12 +39,22 @@
 	<img alt="SQLite", src="https://img.shields.io/badge/SQLite-white?style=for-the-badge&logo=sqlite&logoColor=white&logoSize=64&label=%20&labelColor=%23004599&color=242323">
 </p>
 
----
+<H1 align="center">-==[ Profile ]==-</H1>
+
 <p align="center">
  	<img width="50%" alt="Discord Status" src="https://lanyard.cnrad.dev/api/890139054228783124?bg=191919&borderRadius=24px&idleMessage=lol&showDisplayName=true&hideActivity=true">
 	<br><br>
  	<img alt="Guthib stuts" src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6">
 </p>
+
+<H2 align="center">-==[ PC stats ]==-</H2>
+
+```json
+CPU: Ryzen 3 1200 3.50GHz
+GPU: RX 580 2048SP (8 GB)
+RAM: 2x16 (32)GB 3200Mhz
+ROM: 2TB (2x500GB, 750GB, 250GB)
+```
 
 ---
 
