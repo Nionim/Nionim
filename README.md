@@ -42,7 +42,7 @@
 <p align="center">
  	<img width="50%" alt="Discord Status" src="https://lanyard.cnrad.dev/api/890139054228783124?bg=191919&borderRadius=24px&idleMessage=lol&showDisplayName=true&hideActivity=true">
 	<br><br>
- 	<img alt="Guthib stuts" src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6">
+ 	<a href="#"><img alt="Guthib stuts" src="https://github-readme-streak-stats.herokuapp.com?user=Nionim&theme=gotham&border_radius=6"></a>
 </p>
 
 <H2 align="center">-==[ PC stats ]==-</H2>
