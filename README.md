@@ -69,7 +69,7 @@ ROM: 2TB (2x500GB, 750GB, 250GB)
   	<a href="https://github.com/Project-Violette" target="_blank">
 		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.violette.png" alt="Project~Violette"></a>
   	<a href="https://github.com/citory-net" target="_blank">
-		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.void.png" alt="Citory.net"></a>
+		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/vaYO.jpg" alt="Citory.net"></a>
 	<a href="https://github.com/Delta-Factory" target="_blank">
   		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
 	<a href="https://github.com/fantasyaxe" target="_blank">
