@@ -1,5 +1,5 @@
-/dev/<a href="https://github.com/Nionim/NionimDocs" target="_blank">LocalDocs</a>
-<br>/LinkedIn/<a class="badge-base__link LI-simple-link" href="https://ru.linkedin.com/in/citory">DeltaCion</a>
+/dev/<a href="https://github.com/Nionim/NionimDocs" target="_blank">LocalDocs</a>/<a href="https://github.com/Nionim/NionimDocs" target="_blank">FUNNY.md</a><br>
+/LinkedIn/<a class="badge-base__link LI-simple-link" href="https://ru.linkedin.com/in/citory">DeltaCion</a>
 
 <H1 align="center">-==[ $ DeltaCion ]==-</H1>
 
