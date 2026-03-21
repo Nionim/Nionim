@@ -48,7 +48,7 @@
 
 <H2 align="center">-==[ PC stats ]==-</H2>
 
-```json
+```json 
 CPU: Ryzen 3 1200 3.50GHz
 GPU: RX 580 2048SP (8 GB)
 RAM: 2x16 (32)GB 3200Mhz
