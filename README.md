@@ -66,16 +66,18 @@ ROM: 2TB (2x500GB, 750GB, 250GB)
     <img alt="My Telegram" src="https://img.shields.io/badge/My_Telegram-white?style=for-the-badge&logo=telegram&logoColor=white&logoSize=64&label=%20&labelColor=00aeff&color=242323&link=https%3A%2F%2Ft.me%2Fprojectviolette"></a>
 </p>
 
+<!-- Idk why but its broken by github (today id 21.04.2026. problem founded by mounth ago) (lol)
 <p align="center">
   	<a href="https://github.com/Project-Violette" target="_blank">
 		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/p.violette.png" alt="Project~Violette"></a>
   	<a href="https://github.com/citory-net" target="_blank">
 		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/vaYO.jpg" alt="Citory.net"></a>
 	<a href="https://github.com/Delta-Factory" target="_blank">
-  		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
+		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/me.citory.jpg" alt="It`s me <3"></a>
 	<a href="https://github.com/fantasyaxe" target="_blank">
-  		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/re-Mine.png" alt="A fresh look at Minecraft 1.5.2"></a>
+		<img width="64" height="64" src="https://raw.githubusercontent.com/Delta-Factory/.github/refs/heads/main/profile/img/re-Mine.png" alt="A fresh look at Minecraft 1.5.2"></a>
 </p>
+-->
 
 ---
 
